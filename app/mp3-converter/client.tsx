@@ -107,7 +107,8 @@ export default function ConverterClient() {
       await ffmpeg.exec(command);
 
       const data = await ffmpeg.readFile(outputName);
-      const blob = new Blob([data as Uint8Array], { type: `audio/${outputFormat}` });
+      // @ts-ignore - FFmpeg returns Uint8Array but TypeScript has issues with the type
+      const blob = new Blob([data], { type: `audio/${outputFormat}` });
       const url = URL.createObjectURL(blob);
       setOutputUrl(url);
       setProgress(100);
