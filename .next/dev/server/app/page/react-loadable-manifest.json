@@ -1,0 +1,9 @@
+{
+  "[project]/app/mp3-converter/client.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/app/mp3-converter/client.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/_7a1fc4db._.js",
+      "static/chunks/app_mp3-converter_client_tsx_be73cb7f._.js"
+    ]
+  }
+}
